@@ -1,0 +1,276 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Roboto&display=swap");
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  width: 100%;
+  height: 100px;
+  padding: 50px 0 0 0;
+}
+
+footer h5 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* generales */
+html {
+  /* etiqueta raíz */
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+/*Grilla */
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  margin: 40px 0 40px 0;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+  -ms-grid-rows: (200px)[3];
+      grid-template-rows: repeat(3, 200px);
+  gap: 1px 1px;
+  text-align: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  font-size: 1.5rem;
+      grid-template-areas: "bannerUno bannerUno bannerUno bannerUno" "noticiaDos noticiaDos noticiaTres noticiaCuatro" "noticiaCinco noticiaSeis noticiaSiete noticiaCuatro";
+}
+
+.bannerUno {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: bannerUno;
+  background-color: #EFF4F7;
+}
+
+.noticiaTres {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: noticiaTres;
+  background-color: #73CAEF;
+}
+
+.noticiaDos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: noticiaDos;
+  background-color: #89FFFB;
+}
+
+.noticiaCuatro {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: noticiaCuatro;
+  background-color: #41E2DD;
+}
+
+.noticiaCinco {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: noticiaCinco;
+  background-color: #50D8C8;
+}
+
+.noticiaSeis {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: noticiaSeis;
+  background-color: #53B4F4;
+}
+
+.noticiaSiete {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: noticiaSiete;
+  background-color: #CDE0E4;
+}
+
+/* header */
+.la {
+  background-image: url("images/la.jpg");
+}
+
+.chicago {
+  background-image: url("images/chicago.jpg");
+}
+
+.ny {
+  background-image: url("images/ny.jpg");
+}
+
+header {
+  background-color: #001F3F;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+}
+
+header nav .flexMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 40px;
+  font-size: 1.2rem;
+}
+
+.flexMenu li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header h1 {
+  color: #000000;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 40px;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-apple {
+  background-color: #fafafa;
+}
+
+#siteHeader, #siteFooter {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+}
+
+#siteHeader .miLogo {
+  background: url("../assets/logo.svg") no-repeat;
+  width: 50px;
+  height: 40px;
+  display: block;
+}
+
+#siteBanner {
+  background-image: url("../assets/imagen4.jpg");
+  background-size: cover;
+  background-position: 50%;
+  min-height: 400px;
+  height: 50vh;
+  position: relative;
+}
+
+#siteBanner span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#43e97b), to(#38f9d7));
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  background-position: 50%;
+  opacity: .6;
+}
+
+#siteBanner h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  line-height: 1.25em;
+  font-weight: 900;
+}
+
+#siteBanner p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#siteImacs a {
+  color: #2c5f96;
+}
+
+#siteFooter p {
+  margin-bottom: .5em;
+}
+
+#siteFooter {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.form-group {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+.btn-primary {
+  margin-top: auto;
+  margin-left: 20%;
+}
+
+#trabajos {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "mod fot" "ren ani" "dis dis";
+  -ms-grid-rows: 15rem 15rem 15rem;
+      grid-template-rows: 15rem 15rem 15rem;
+  -ms-grid-columns: 20rem 20rem;
+      grid-template-columns: 20rem 20rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-items: stretch;
+  /* start | end | center | stretch */
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-grid-row-align: stretch;
+      align-self: stretch;
+  margin: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  text-decoration: none;
+  color: black;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Bebas Neue', cursive;
+  height: 80%;
+}
+
+article {
+  background-color: yellow;
+  text-decoration: none;
+  color: black;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'Bebas Neue', cursive;
+}
+/*# sourceMappingURL=estilos.css.map */
