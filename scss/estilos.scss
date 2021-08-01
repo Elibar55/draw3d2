@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Roboto&display=swap");
-body{font-family:'Open Sans', sans-serif}
-@import 'footer', 'generales', 'grilla', 'header';
+body{
+	font-family:'Open Sans', sans-serif;
+	background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+@import 'generales', 'flex';
 .bg-black{
 	background-color:#000
 	}
@@ -35,16 +38,14 @@ body{font-family:'Open Sans', sans-serif}
 	}
 #siteBanner h3{
 		font-family:'Roboto', sans-serif;
-		font-size:30px;
+		font-size: 35px;
 		line-height:1.25em;
 		font-weight:900
 		}
 #siteBanner p{
 	font-family:'Montserrat', sans-serif
 	}
-#siteImacs a{
-	color:#2c5f96
-	}
+
 #siteFooter p{
 	margin-bottom:.5em
 	}
@@ -55,7 +56,7 @@ body{font-family:'Open Sans', sans-serif}
 	}
 
 .form-group{
-	height: fit-content;
+	height: auto;
 	margin-right: 20%;
 	margin-left: 20%;
 	margin-top: 10%;
@@ -64,35 +65,8 @@ body{font-family:'Open Sans', sans-serif}
 	margin-top: auto;
 	margin-left: 20%
 }
-#trabajos{
-	display: grid;
-	grid-template-areas: 
-	"mod fot"
-	"ren ani"
-	"dis dis";
-	grid-template-rows: 15rem 15rem 15rem; 
-    grid-template-columns: 20rem 20rem ;
-    justify-content: space-evenly;
-	justify-items: stretch; /* start | end | center | stretch */
-	align-items: stretch;	
-	align-self: stretch;
-	margin: 10px;
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
-	text-decoration: none;
-	color: black;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 35px;
-	font-family: 'Bebas Neue', cursive;
-	height: 80%;
-	}
-article{
-	background-color: yellow;
-	text-decoration: none;
-	color: black;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 2rem;
-	font-family: 'Bebas Neue', cursive;
+.card-img{
+	height: auto;
+	width: 100%;
 }
+
