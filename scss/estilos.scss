@@ -50,28 +50,43 @@ body{
 }
 .tituloFormServicios{
 	font-family:'Roboto', sans-serif;
-	font-size: 20px;
+	font-size: 1rem;
 	line-height:1.25em;
 	font-weight:900
 }
-
 .textoCuerpo{
+	width: 100%;
 	font-family:'Roboto', sans-serif;
-	font-size:30px;
+	font-size: 2rem;
 	position: relative;
-	align-self: center;
-
+	padding: 5%;
+	display: block;
+	text-align: center;
+}
+@media only screen and (min-width: 566px){
+	.textoCuerpo{
+		font-size: 6rem;
+		position: relative;
+		margin-bottom: 15px;
+		display:block;
+		text-align: center;
+	}
 }	
 
 #siteFooter{
+	z-index:0;
+	margin-top: .5em;
 	bottom:0;
-	position:fixed;
+	position: fixed;
 	width:100%;
+	display: block;
 	p{
 		margin-bottom:.5em
 		}
 	}
-
+#formContactos{
+	margin-top: 10%;
+}
 .form-group{
 	height: auto;
 	margin-right: 20%;

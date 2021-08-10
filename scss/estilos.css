@@ -22,8 +22,12 @@ body {
 }
 
 /*flex*/
-#trabajos, #trabajos2 {
-  margin-top: 3rem;
+#trabajos {
+  padding: 0;
+  width: auto;
+  height: 45%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,15 +35,34 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+#trabajos2 {
+  padding: 0;
+  width: auto;
+  height: 45%;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
 @media only screen and (min-width: 566px) {
   #trabajos, #trabajos2 {
+    padding: 0;
     margin-top: 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -48,8 +71,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
@@ -104,28 +128,46 @@ body {
 
 .tituloFormServicios {
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 1.25em;
   font-weight: 900;
 }
 
 .textoCuerpo {
+  width: 100%;
   font-family: 'Roboto', sans-serif;
-  font-size: 30px;
+  font-size: 2rem;
   position: relative;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  padding: 5%;
+  display: block;
+  text-align: center;
+}
+
+@media only screen and (min-width: 566px) {
+  .textoCuerpo {
+    font-size: 6rem;
+    position: relative;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+  }
 }
 
 #siteFooter {
+  z-index: 0;
+  margin-top: .5em;
   bottom: 0;
   position: fixed;
   width: 100%;
+  display: block;
 }
 
 #siteFooter p {
   margin-bottom: .5em;
+}
+
+#formContactos {
+  margin-top: 10%;
 }
 
 .form-group {
