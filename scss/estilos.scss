@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Roboto&display=swap");
+
 body{
 	font-family:'Open Sans', sans-serif;
 	background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
-@import 'generales', 'flex';
+@import 'generales', 'flex', 'variables', 'contacto';
 
 .bg-black{
 	background-color:#000
 	}
 #siteHeader,#siteFooter{
-	font-family:'Bebas Neue', cursive;
+	font-family: $fuenteUno;
 	font-size:30px
 	}
 #siteHeader .miLogo{
@@ -37,13 +37,13 @@ body{
 			background-position: 50%;
 			opacity: .6;	
 			h3{
-				font-family:'Roboto', sans-serif;
+				font-family: $fuenteDos;
 				font-size: 35px;
 				line-height:1.25em;
 				font-weight:900
 				}
 				p{
-					font-family:'Montserrat', sans-serif
+					font-family: $fuenteTres;
 					}
 		}
 
@@ -51,7 +51,7 @@ body{
 }
 .tituloForm{
 	margin-top: 1rem;
-	font-family:'Roboto', sans-serif;
+	font-family: $fuenteDos;
 	font-size: 1.5rem;
 	line-height:1.25em;
 	font-weight:900;
@@ -63,7 +63,7 @@ body{
 .tituloGaleria{
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-	font-family:'Roboto', sans-serif;
+	font-family: $fuenteDos;
 	font-size: 2rem;
 	line-height:1.25em;
 	font-weight:900;
@@ -86,7 +86,7 @@ body{
 }
 .textoCuerpo{
 	width: 100%;
-	font-family:'Roboto', sans-serif;
+	font-family: $fuenteDos;
 	font-size: 2rem;
 	position: relative;
 	padding: 5%;
@@ -114,12 +114,8 @@ body{
 		margin-bottom:.5em
 		}
 	}
-.form-group{
-	height: auto;
-	margin-right: 30%;
-	margin-left: 30%;
-}
 .btn-primary{
 	margin-top: auto;
 	margin-left: 30%
 }
+

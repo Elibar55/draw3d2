@@ -1,24 +1,23 @@
 
 /*flex*/
-#trabajos{
+@mixin trabajos{
     padding: 0;
     width: auto;
     height: 45%;
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    
+}
+#trabajos{
+    @include trabajos;
+    margin-top: 1rem;
+   
 }
 #trabajos2{
-    padding: 0;
-    width: auto;
-    height: 45%;
+    @include trabajos;
     margin-bottom: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
 }
 @media only screen and (min-width: 566px){
     #trabajos, #trabajos2{
